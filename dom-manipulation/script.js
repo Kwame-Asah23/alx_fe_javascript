@@ -49,7 +49,8 @@ function addQuote() {
     const categoryInput = document.createElement('input');
     const submitButton = document.createElement('button');
     const exportButton = document.getElementById('exportQuotes');
-    const importInput = document.createElement('input');
+    const importInput = document.getElementById('importInput');
+    // const importInput = document.createElement('input');
 
     // Set attributes and placeholders for the inputs
     quoteInput.setAttribute('type', 'text');
@@ -58,8 +59,8 @@ function addQuote() {
     categoryInput.setAttribute('placeholder', 'Enter category');
     submitButton.textContent = 'Add Quote';
     // exportButton.textContent = 'Export Quotes';
-    importInput.setAttribute('type', 'file');
-    importInput.setAttribute('accept', 'application/json');
+    // importInput.setAttribute('type', 'file');
+    // importInput.setAttribute('accept', 'application/json');
 
     // Append inputs and button to the form
     createAddQuoteForm.appendChild(quoteInput);
