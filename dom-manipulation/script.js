@@ -13,11 +13,11 @@ const quotes = [
 // Function to show a random quote
 function displayRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    const selectedQuote = quotes[randomIndex];
+    const showRandomQuote = quotes[randomIndex];
 
     // Display the quote in the quoteDisplay div
     const quoteDisplay = document.getElementById('quoteDisplay');
-    quoteDisplay.innerHTML = `"${selectedQuote.text}" - Category: ${selectedQuote.category}`;
+    quoteDisplay.innerHTML = `"${showRandomQuote.text}" - Category: ${showRandomQuote.category}`;
 };
 
 
