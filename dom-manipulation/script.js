@@ -24,7 +24,7 @@ function displayRandomQuote() {
 // Function to create and display the add quote form
 function addQuote() {
     // Create form elements
-    const form = document.createElement('form');
+    const createAddQuoteForm = document.createElement('form');
     const quoteInput = document.createElement('input');
     const categoryInput = document.createElement('input');
     const submitButton = document.createElement('button');
@@ -37,12 +37,12 @@ function addQuote() {
     submitButton.textContent = 'Add Quote';
 
     // Append inputs and button to the form
-    form.appendChild(quoteInput);
-    form.appendChild(categoryInput);
-    form.appendChild(submitButton);
+    createAddQuoteForm.appendChild(quoteInput);
+    createAddQuoteForm.appendChild(categoryInput);
+    createAddQuoteForm.appendChild(submitButton);
 
     // Handle form submission
-    form.addEventListener('submit', function (event) {
+    createAddQuoteForm.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent form from submitting normally
 
         // Get the values from the inputs
@@ -61,7 +61,7 @@ function addQuote() {
     });
 
     // Append the form to the body 
-    document.body.appendChild(form);
+    document.body.appendChild(createAddQuoteForm);
 }
 
 
