@@ -57,7 +57,7 @@ function addQuote() {
     categoryInput.setAttribute('type', 'text');
     categoryInput.setAttribute('placeholder', 'Enter category');
     submitButton.textContent = 'Add Quote';
-    exportButton.innerHTML = 'Export Quotes';
+    exportButton.textContent = 'Export Quotes';
     importInput.setAttribute('type', 'file');
     importInput.setAttribute('accept', 'application/json');
 
