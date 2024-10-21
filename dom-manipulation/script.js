@@ -70,5 +70,9 @@ const showNewQuote = document.getElementById('newQuote');
 showNewQuote.addEventListener('click', displayRandomQuote);
 
 // Call the function to create and display the add quote form when the page loads
+<<<<<<< HEAD:script.js
 addQuote();
 
+=======
+createAddQuoteForm();
+>>>>>>> d21ec2543a8cf87f7af5fca4ffab915af61b89a5:dom-manipulation/script.js
